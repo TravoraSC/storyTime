@@ -1,0 +1,75 @@
+body {
+  word-wrap: break-word;
+  background-image: url(./img/book.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#211914;
+  font-family: "mukta", Arial, Helvetica, sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+img {
+  height: 200px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0.7rem;
+}
+
+span,
+p {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 3rem;
+  text-align: center;
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+  margin-top: 1rem;
+}
+
+.row {
+  margin-left: 14rem;
+}
+
+textarea {
+  width: 192px;
+  height: 2.5rem;
+}
+
+form {
+  width: fit-content;
+}
+
+.submit {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  margin-left: 28.3rem;
+
+  display: block;
+}
+
+.col-sm-6 {
+  padding: 0;
+  margin-left: 15rem;
+  font-size: 1rem;
+}
+
+.jumbotron {
+  background-color: #211914;
+  color: white;
+}

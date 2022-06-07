@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Commission Tracker</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <% if(lines === undefined){lines = ""} %>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1>Story Board</h1>
+        <a href="/profile" class="btn btn-default btn-sm deleteAuthorLines">Delete Your Lines</a>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/profile" class="btn btn-default btn-sm deleteAll">Delete Story</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <h3>Add a line to the story</h3>
+      <% if (user.local.email) { %>
+        <form action="/postLine" method="POST">
+          <input type="text" placeholder="Name" name="name">
+          <textarea type="text" placeholder="Story Line" name="line"></textarea>
+          <button class="submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <% } %>
+
+        <div class="col-sm-6">
+          <div class="lines">
+          <% for(var i=0; i<lines.length; i++) {%>
+              <p class="author"><%= lines[i].name %><span class="storyLine"> (<%= lines[i].line %>)</span></p>
+          <% } %>
+          </div>
+
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
